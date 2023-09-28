@@ -12,7 +12,7 @@ struct Item
 double fS = 0;    // Objective function value of S
 double costS = 0; // Cost of items in S
 
-vector<int> MarginalRatioThresholding(double alpha, int K, vector<Item> &items)
+vector<int> MarginalRatioThresholding(double alpha, int K, vector<Item> items)
 {
     vector<int> S; // Selected items
 
@@ -36,6 +36,19 @@ int main()
     double alpha = 0.5;
     int K = 10;
 
+    vector<int> selectedItems = MarginalRatioThresholding(alpha, K, items);
+
+    cout << "Selected items: ";
+    for (int item : selectedItems)
+    {
+        cout << item << " ";
+    }
+    cout << endl;
+    cout << "Function value of S : " << fS << endl;
+    cout << "Function cost of S : " << costS << endl;
+    return 0;
+}
+
     // int n;
     // cout << "Enter number n : ";
     // cin >> n;
@@ -49,16 +62,3 @@ int main()
     //     cin >> item.cost;
     //     items.push_back(item);
     // }
-
-    vector<int> selectedItems = MarginalRatioThresholding(alpha, K, items);
-
-    cout << "Selected items: ";
-    for (int item : selectedItems)
-    {
-        cout << item << " ";
-    }
-    cout << endl;
-    cout << "Function value of S : " << fS << endl;
-    cout << "Function cost of S : " << costS << endl;
-    return 0;
-}
