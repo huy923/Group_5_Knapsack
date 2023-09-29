@@ -49,16 +49,16 @@ int main()
     return 0;
 }
 
-    // int n;
-    // cout << "Enter number n : ";
-    // cin >> n;
-    // vector<Item> items;
-    // while (n--)
-    // {
-    //     Item item;
-    //     cout << "Enter value: ";
-    //     cin >> item.value;
-    //     cout << "Enter cost: ";
-    //     cin >> item.cost;
-    //     items.push_back(item);
-    // }
+// int n;
+// cout << "Enter number n : ";
+// cin >> n;
+// vector<Item> items;
+// while (n--)
+// {
+//     Item item;
+//     cout << "Enter value: ";
+//     cin >> item.value;
+//     cout << "Enter cost: ";
+//     cin >> item.cost;
+//     items.push_back(item);
+// }
